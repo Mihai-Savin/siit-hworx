@@ -8,6 +8,7 @@ import static org.junit.Assert.*;
 
 public class AutomotiveTest {
 
+	// TODO CODE REVIEW: Where is CarInventory?
 	private CarInventory aCarInventory;
 	
 	@Before
