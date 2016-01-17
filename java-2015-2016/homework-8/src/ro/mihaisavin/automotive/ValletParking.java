@@ -50,6 +50,7 @@ public class ValletParking<T extends Vehicle> {
 			aVehicle.drive(0.5f);
 		} catch (NotEnoughFuelException e) {
 			e.printStackTrace();
+			// TODO CODE REVIEW: the app is not stopped / or exception thrown onwards. Is this ok?
 		}
 		aVehicle.stop();
 		if (location == -1) { // default parking procedure - no vehicles left

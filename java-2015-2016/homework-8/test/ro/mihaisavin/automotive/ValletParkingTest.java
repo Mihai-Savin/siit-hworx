@@ -55,6 +55,7 @@ public class ValletParkingTest {
 	 */
 	@Test
 	public void checkRetrieve_valid() {
+		// TODO CODE REVIEW: You should extract the expectedVehicle and then pass it to park() method. You shouldn't have to create 2 instances.
 		ParkingTicket aTicket = aValletParking.park(new Logan(10, "SOME789CHASSIS33NUMBER"));
 		Vehicle expectedVehicle = new Logan(10, "SOME789CHASSIS33NUMBER");
 		Vehicle retrievedVehicle = aValletParking.retrieve(aTicket);
@@ -72,6 +73,7 @@ public class ValletParkingTest {
 		assertNull(retrievedVehicle);
 	}
 
+	// TODO CODE REVIEW: That is correct :)
 	// @Test //This is compiling error, I guess there is no other way to test
 	// this is there?!!?
 	// public void checkSubaru() {
